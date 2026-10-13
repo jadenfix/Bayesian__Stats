@@ -106,9 +106,9 @@ Key Features:
 python -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
-python run_research.py 'GSB544_HW2_solutions.ipynb'
+python run_research.py --all
 ```
 
-Both committed decision-analysis notebooks run offline in full; no claim that the README illustrative PyMC examples or uncommitted case-study directories are implemented. Figures and a cell execution manifest are written to `research-output/`. The runner executes the original code cells, stops on errors, seeds NumPy to 42, and uses a headless plotting backend.
+Both committed decision-analysis notebooks run offline in full; no claim that the README illustrative PyMC examples or uncommitted case-study directories are implemented. Each notebook gets an isolated, checksum-pinned receipt and figure directory under `research-output/`, with a batch index at `research-output/index.json`. The runner executes the original code cells, stops on errors, seeds NumPy to 42, and uses a headless plotting backend.
 
 Runnable notebooks: `GSB544_HW2_solutions.ipynb`, `shafer_fix_1.ipynb`.
