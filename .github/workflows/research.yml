@@ -1,0 +1,19 @@
+name: Research execution
+on: [push, pull_request]
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MPLBACKEND: Agg
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: |
+          python run_research.py GSB544_HW2_solutions.ipynb
+          python run_research.py shafer_fix_1.ipynb
