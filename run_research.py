@@ -103,6 +103,8 @@ def execute_notebook(notebook: str, output_root: Path, root: Path = ROOT) -> dic
 def run_many(notebooks: list[str], output_root: Path, root: Path = ROOT) -> dict:
     """Run notebooks and write an index that cannot conflate their artifacts."""
     output_root.mkdir(parents=True, exist_ok=True)
+    # Never leave a previous successful batch index behind when a rerun fails.
+    (output_root / "index.json").unlink(missing_ok=True)
     reports = [execute_notebook(name, output_root, root) for name in notebooks]
     index = {
         "notebooks": [

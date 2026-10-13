@@ -76,6 +76,21 @@ class ResearchArtifactTests(unittest.TestCase):
             )
             self.assertEqual(receipt["figures"], [])
 
+    def test_failed_batch_does_not_leave_a_stale_success_index(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            output = root / "output"
+            output.mkdir()
+            (output / "index.json").write_text('{"stale": true}\n')
+            (root / "broken.ipynb").write_text(
+                json.dumps(notebook("raise RuntimeError('expected failure')"))
+            )
+
+            with self.assertRaisesRegex(RuntimeError, "expected failure"):
+                run_many(["broken.ipynb"], output, root)
+
+            self.assertFalse((output / "index.json").exists())
+
 
 if __name__ == "__main__":
     unittest.main()
