@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "recorded_source_commit": "2c7dcb1ec6f604d8205762930ce08c4a46ee036a",
+  "recorded_source_tree": "f57499dc9a45d13fe138d77e1db26fcf55292c02",
+  "command": "python run_research.py --all",
+  "scope": "Offline coursework notebooks with seeded/local inputs only; no scientific, predictive, or real-world performance claim.",
+  "runtime_files": {
+    "run_research.py": {
+      "git_blob": "714cab07ae6c4f7e4efbb2e18a81c438d724b63f",
+      "sha256": "cd55d4d9033254211e47a8afb8faad0006cc9620c85ebe3702d4627a349c4790"
+    },
+    "requirements.txt": {
+      "git_blob": "3d7b6ffa331ddd90c3e099baee68e2dc008815d1",
+      "sha256": "04421bec98ba6899464f2935c7c26b7d477ee9a42687d6a17e93855a740272be"
+    },
+    "GSB544_HW2_solutions.ipynb": {
+      "git_blob": "04b073ddaf717425f9f19e77ef985247eaa8a3a9",
+      "sha256": "ebd2b1a0b503d93e4ada0967265e1181a0368c04872ec7ece2f51f1a05882a32"
+    },
+    "shafer_fix_1.ipynb": {
+      "git_blob": "3742cfbd97cbab5e642ac3a0bb214549ef49460f",
+      "sha256": "4f039039d9627be2fdfdfdbfc635028478dd7d1beefdf5cb47f065f52c04e4f4"
+    }
+  },
+  "notebooks": [
+    {
+      "notebook": "GSB544_HW2_solutions.ipynb",
+      "notebook_sha256": "ebd2b1a0b503d93e4ada0967265e1181a0368c04872ec7ece2f51f1a05882a32",
+      "receipt": "GSB544_HW2_solutions/execution.json",
+      "figures": [
+        "GSB544_HW2_solutions/figure-1.png"
+      ]
+    },
+    {
+      "notebook": "shafer_fix_1.ipynb",
+      "notebook_sha256": "4f039039d9627be2fdfdfdbfc635028478dd7d1beefdf5cb47f065f52c04e4f4",
+      "receipt": "shafer_fix_1/execution.json",
+      "figures": []
+    }
+  ],
+  "observed_results": {
+    "band": "2093 trials",
+    "replication": "6.11%",
+    "decision": "Q* = 50 brownies"
+  },
+  "stdout_sha256": "a8c43346c184cae566c38d1cbac65059d6ab2cd33d3f36595ea0ab0939049169",
+  "artifacts": {
+    "bayesian-stats-demo.gif": {
+      "bytes": 203917,
+      "sha256": "c97f79d31c04494455ee9a83572fe8009f3fbbd4d061a644581ca944886ea36d"
+    },
+    "bayesian-stats-demo.mp4": {
+      "bytes": 195907,
+      "sha256": "68d496d1864312ac138cd464580a0b136f2677f9e5e6b8c1a5d8f578981d5c33"
+    },
+    "bayesian-stats-poster.png": {
+      "bytes": 163899,
+      "sha256": "464219b050dcc63872272204536343b00c598a9d71df2ea39171106837ea6450"
+    }
+  }
+}
