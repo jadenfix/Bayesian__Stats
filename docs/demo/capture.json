@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "recorded_source_commit": "2c7dcb1ec6f604d8205762930ce08c4a46ee036a",
-  "recorded_source_tree": "f57499dc9a45d13fe138d77e1db26fcf55292c02",
+  "recorded_source_commit": "906f3fcccb7c3e7ce96e3678a12ca9ceae1c2c0e",
+  "recorded_source_tree": "436c1fee0be0caeba487048252c1ee75c7b16f0c",
   "command": "python run_research.py --all",
   "scope": "Offline coursework notebooks with seeded/local inputs only; no scientific, predictive, or real-world performance claim.",
   "runtime_files": {
     "run_research.py": {
-      "git_blob": "714cab07ae6c4f7e4efbb2e18a81c438d724b63f",
-      "sha256": "cd55d4d9033254211e47a8afb8faad0006cc9620c85ebe3702d4627a349c4790"
+      "git_blob": "5aee62bfe20595d3095139f39662ab608513ee39",
+      "sha256": "5fa89385376739ca1920089b99e0ace7cf4e803d2f7fcf9a45634f5dc14e9d80"
     },
     "requirements.txt": {
       "git_blob": "3d7b6ffa331ddd90c3e099baee68e2dc008815d1",
@@ -43,7 +43,7 @@
     "replication": "6.11%",
     "decision": "Q* = 50 brownies"
   },
-  "stdout_sha256": "a8c43346c184cae566c38d1cbac65059d6ab2cd33d3f36595ea0ab0939049169",
+  "stdout_sha256": "5846db88263462f662f3df5ac67e483cb6a3ea06a42670a9307fb0e2c8d665e2",
   "artifacts": {
     "bayesian-stats-demo.gif": {
       "bytes": 203917,
